@@ -11,7 +11,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         "Led and monitored team progress, participated in planning, development, and finishing stages. This leadership contributed to timely project completion, cohesive teamwork, and a robust final product.",
       url: 'https://drive.google.com/drive/folders/1ZR3JUpbR5BkweQh6f9EZXKlOV4iSWEKN',
-      img: '',
+      img: '/task.png',
       tags: [
         'Flutter',
         'Firebase',
@@ -25,7 +25,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         'Oversaw and directed team progress, involved in the planning, development, and finalization phases. This leadership ensured the project was completed on schedule, with cohesive teamwork and a high-quality end product.',
       url: 'https://lms-alfirdaus.000webhostapp.com',
-      img: '',
+      img: '/lms.png',
       tags: ['Laravel', 'Bootstrap', 'PHP', 'MYSQL'],
     },
     {
@@ -35,7 +35,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         'Monitored team progress, managed application development, and actively participated in coding, especially focusing on frontend development. This role contributed to smooth project execution, timely completion, and a user-friendly final product.',
       url: 'https://admin-lktim-2024.vercel.app',
-      img: '',
+      img: '/lktim.png',
       tags: ['Nextjs', 'Mongodb', 'TypeScript', 'TailwindCSS', 'API'],
     },
     {
@@ -45,7 +45,7 @@ const featuredProjectsSection: FeaturedProjectsSectionType = {
       tasks:
         'Led and monitored team progress, participating in planning, development, and finalization stages. This role ensured the project was executed efficiently, resulting in a reliable and effective final product.',
       url: 'https://drive.google.com/drive/folders/1ajy-rNFdaHozSri94bPO_cJDhdUcEUUp?usp=drive_link',
-      img: '',
+      img: '/omniface.png',
       tags: ['Open AI', 'Laravel', 'TensorFlow', 'Flutter', 'Mysql', 'Google Maps API'],
     },
   ],

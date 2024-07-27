@@ -34,6 +34,6 @@ export const seoData = {
     'farrelputra',
     'Portfolio',
     'Farrel Portfolio ',
-    'Farrel Putra Singh Portfolio',
+    'Farrel Putra Portfolio',
   ],
 };
