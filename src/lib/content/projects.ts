@@ -29,7 +29,7 @@ export const projectsSection: ProjectsSectionType = {
       repo: 'https://github.com/synkodegroup/admin-lktim-2024',
       img: '/lktim.png',
       year: 2024,
-      tags: ['Nextjs', 'MongoDB', 'API', 'Sass'],
+      tags: ['Nextjs', 'MongoDB', 'API', 'Saas'],
     },
     {
       id: getId(),
