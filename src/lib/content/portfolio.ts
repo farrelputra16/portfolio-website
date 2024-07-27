@@ -24,8 +24,7 @@ export const seoData = {
   description:
     'Farrel Arkesya Kahira Putra is a Software Engineer who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
-  image: 
-    '/portfolio.png',
+  image: '/portfolio.png',
   url: 'https://farrel-putra16-portfolio.vercel.app/',
   keywords: [
     'Farrel',
