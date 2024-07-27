@@ -24,31 +24,31 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Vatsal Singh, a first-year MCA student at{' '}
+            Hi, my name is Farrel Arkesya Kahira Putra, Undergraduate student at{' '}
             <Link
-              href="https://bhu.ac.in/"
+              href="https://unnes.ac.id/"
               target="_blank"
               className="text-accent"
             >
-              Banaras Hindu University
+              Universitas Negeri Semarang
             </Link>
-            .<br /> I'm an Artist as well as crazy full stack web developer who
+            .<br /> I'm an Artist as well as crazy Software Engineering who
             wants to explore every tech stack.
           </p>
           <p>
             Fast-forward to today, and I've had the privilege of working at a
             start-up -{' '}
             <Link
-              href="https://www.pixelwand.live/"
+              href="https://www.linkedin.com/company/synkodegroup/"
               target="_blank"
               className="text-accent"
             >
-              Pixelwand
+              SynKode
             </Link>
             .
           </p>
           <p>
-            My main focus these days is learning mobile development and finding
+            My main focus these days is learning Artificial Intelligence and finding
             a decent job.
           </p>
 

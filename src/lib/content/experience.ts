@@ -4,10 +4,10 @@ export const experienceSection: ExperienceSectionType = {
   title: "where i've worked",
   experiences: [
     {
-      company: 'Pixelwand',
-      companyUrl: 'https://www.pixelwand.live/',
-      role: 'frontend developer',
-      started: 'july 2023',
+      company: 'SynKode',
+      companyUrl: 'https://www.linkedin.com/company/synkodegroup/',
+      role: 'Software Engineer Manager',
+      started: 'january 2024',
       upto: 'present',
       tasks: [
         'Implemented UI components with React & Next.js, TypeScript & Tailwind CSS.',
@@ -17,28 +17,23 @@ export const experienceSection: ExperienceSectionType = {
       ],
     },
     {
-      company: 'SHMTH Capital',
-      companyUrl: 'https://shmth.capital/',
-      role: 'frontend developer intern',
-      started: 'april 2023',
-      upto: 'july 2023',
+      company: 'AEON Credit Service Indonesia',
+      companyUrl: 'https://www.linkedin.com/company/aeon-credit-service-indonesia/',
+      role: 'information technology intern',
+      started: 'juny 2023',
+      upto: 'may 2024',
       tasks: [
-        'Built trading platform using TradingView library.',
-        'Designed SHMTH Capital website with Next.js, TypeScript & TailwindCSS.',
-        'Collaborated with diverse nationwide team of developers.',
+        'Learn about Backend with Oracle Database.'
       ],
     },
     {
-      company: 'webnetics',
-      companyUrl: 'https://webnetic.vercel.app/',
-      role: 'frontend developer',
-      started: 'june 2022',
-      upto: 'january 2023',
+      company: 'International MUN',
+      companyUrl: 'https://www.linkedin.com/company/international-mun/',
+      role: 'campus ambassador',
+      started: 'may 2023',
+      upto: 'january 2024',
       tasks: [
-        'Built static frontend UI from the ground up using Next.js and Figma handover designs.',
-        'Architected the folder structure and initial setup of the app.',
-        'Reviewed and approved multiple Pull requests.',
-        'Worked remotely with a distributed team from around the globe, collaborating closely using screen-sharing.',
+        'public speaking, public relations'
       ],
     },
   ],

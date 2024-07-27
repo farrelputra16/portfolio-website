@@ -9,11 +9,11 @@ export const aboutSection: AboutSectionType = {
     items: [
       'NextJs',
       'TailwindCSS',
-      'ExpressJs',
+      'Laravel',
       'AI/ML',
-      'Prisma',
+      'Flutter',
       'CSS Animations',
     ],
   },
-  img: '/vatsal-singh.png',
+  img: '/farrel-putra.png',
 };
