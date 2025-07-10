@@ -17,6 +17,31 @@ export const experienceSection: ExperienceSectionType = {
       ],
     },
     {
+      company: 'Maxy Academy',
+      companyUrl: 'https://maxy.academy/',
+      role: 'Project Manager',
+      started: 'August 2024', // Assuming a start date, adjust as needed
+      upto: 'present', // Assuming current role, adjust as needed
+      tasks: [
+        'Managed and oversaw various projects from conception to completion.',
+        'Coordinated with cross-functional teams to ensure project success.',
+        'Developed project plans, managed timelines, and allocated resources efficiently.',
+      ],
+    },
+    {
+      company: 'Study Crypto',
+      companyUrl: 'https://studycrypto.vercel.app/',
+      role: 'Co-founder',
+      started: 'September 2024', // Assuming a start date, adjust as needed
+      upto: 'present', // Assuming current role, adjust as needed
+      tasks: [
+        'Co-founded and managed a crypto community with over 300 members.',
+        'Organized and facilitated community discussions and educational sessions.',
+        'Developed strategies for community growth and engagement.',
+        'Main Dev of "POKEDEX500", Reached 180-190K Market Cap'
+      ],
+    },
+    {
       company: 'AEON Credit Service Indonesia',
       companyUrl: 'https://www.linkedin.com/company/aeon-credit-service-indonesia/',
       role: 'information technology intern',

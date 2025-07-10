@@ -13,10 +13,13 @@ export const skillsSection: SkillsSectionType = {
         dark: '/lotties/frontend-dark.json',
       },
       points: [
-        'Building full-stack web applications using Next.js with TypeScript, TailwindCSS',
+        'Building full-stack web applications using Next.js with TypeScript, TailwindCSS, React',
         'Building mobile applications using Flutter and Laravel for backend',
         'Developing responsive single-page applications using React.js',
         'Creating RESTful APIs using Express for backend development',
+        'Developing AI-Chatbot with various integrations',
+        'Developing WEB3 Environtments',
+        'Developing AI Application with Various Add on'
       ],
       softwareSkills: [
         // iconify icons: https://icon-sets.iconify.design/
@@ -34,6 +37,8 @@ export const skillsSection: SkillsSectionType = {
         { name: 'nextjs', icon: 'logos:nextjs-icon' },
         { name: 'tailwindcss', icon: 'logos:tailwindcss-icon' },
         { name: 'database', icon: 'vscode-icons:file-type-sql' },
+        { name: 'solidity', icon: 'logos:solidity' },
+        { name: 'web3', icon: 'logos:web3js' }, // Added Web3 logo
       ],
     },
   ],

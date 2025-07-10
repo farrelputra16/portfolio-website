@@ -6,6 +6,42 @@ export const projectsSection: ProjectsSectionType = {
   projects: [
     {
       id: getId(),
+      name: 'Pokedex500',
+      url: 'https://pokedex-on-sol.vercel.app/',
+      repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
+      img: '/pokedex.png',
+      year: 2024, // Assuming year
+      tags: ['React.js', 'Groq API', 'Pokemon API', 'Solana', 'Web3'],
+    },
+    {
+      id: getId(),
+      name: 'fpcode.ai',
+      url: 'https://fpcode-ai.vercel.app/',
+      repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
+      img: '/fpcodeai.png',
+      year: 2024, // Assuming year
+      tags: ['React.js', 'Gemini API', 'Groq API', 'Web3.js', 'Solana'],
+    },
+    {
+      id: getId(),
+      name: 'Study Crypto Web with AI Chart Analyzer',
+      url: 'https://studycrypto.vercel.app/',
+      repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
+      img: '/scweb.png',
+      year: 2024, // Assuming year
+      tags: ['React.js', 'Groq API', 'AI', 'Education', 'Cryptocurrency'],
+    },
+    {
+      id: getId(),
+      name: 'AI Learn and Analyser Tele Bot',
+      url: 'https://web.telegram.org/k/#@study_crypto_assistant_bot',
+      repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
+      img: '/telebot.png',
+      year: 2024, // Assuming year
+      tags: ['Python3', 'Telegram API', 'Groq API', 'Gemini API', 'AI'],
+    },
+    {
+      id: getId(),
       name: 'Task Manager',
       url: 'https://drive.google.com/drive/folders/1ZR3JUpbR5BkweQh6f9EZXKlOV4iSWEKN',
       repo: 'https://github.com/farrelputra16',

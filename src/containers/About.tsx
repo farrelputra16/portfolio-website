@@ -32,8 +32,7 @@ const About = () => {
             >
               Universitas Negeri Semarang
             </Link>
-            .<br /> I'm an Artist as well as crazy Software Engineering who
-            wants to explore every tech stack.
+            .<br /> I'm a Fullstack Developer, Artificial Intelligence and WEB3 Enthusiast.
           </p>
           <p>
             Fast-forward to today, and I've had the privilege of working at a
@@ -43,13 +42,32 @@ const About = () => {
               target="_blank"
               className="text-accent"
             >
-              SynKode
+              SynKode (Software Engineering Manager)
+            </Link>
+            {' and '}
+            <Link
+              href="https://maxy.academy/"
+              target="_blank"
+              className="text-accent"
+            >
+              Maxy Academy (Project Manager)
             </Link>
             .
           </p>
+          {/* New line added here */}
           <p>
-            My main focus these days is learning Artificial Intelligence and finding
-            a decent job.
+            I'm also a Co-founder of{' '}
+            <Link
+              href="https://studycrypto.vercel.app/"
+              target="_blank"
+              className="text-accent"
+            >
+              Study Crypto
+            </Link>
+            , a crypto community with over 300++ members.
+          </p>
+          <p>
+            My main focus these days is Developing Artificial Intelligence and WEB3 Environments.
           </p>
 
           {list && (

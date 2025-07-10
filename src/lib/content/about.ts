@@ -8,11 +8,16 @@ export const aboutSection: AboutSectionType = {
     title: 'Here are a few technologies I’ve been working with recently:',
     items: [
       'NextJs',
+      'Groq API',
+      'Gemini API',
+      'Solidity',
+      'WEB3 Wallets',
       'TailwindCSS',
       'Laravel',
       'AI/ML',
       'Flutter',
       'CSS Animations',
+      'Crypto'
     ],
   },
   img: '/farrel-putra.png',

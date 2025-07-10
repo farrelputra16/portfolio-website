@@ -4,6 +4,47 @@ import { getId } from '@/lib/utils/helper';
 const featuredProjectsSection: FeaturedProjectsSectionType = {
   title: "projects i've worked on",
   projects: [
+
+    {
+      id: getId(),
+      name: 'Pokedex500',
+      description: 'A Pokedex application built on Solana, which successfully achieved a market cap of $180K. This project demonstrates expertise in Web3 development and decentralized applications.',
+      tasks:
+        'Served as the Main Developer, responsible for the entire development lifecycle and instrumental in achieving a $180K market cap for the project.',
+      url: 'https://pokedex-on-sol.vercel.app/',
+      img: '/pokedex.png', // Assuming you'll add a 'pokedex.png' image in your public folder
+      tags: ['React.js', 'Groq API', 'Pokemon API', 'Solana', 'Web3'],
+    },
+    {
+      id: getId(),
+      name: 'fpcode.ai',
+      description: 'An advanced AI project featuring login with Solana Web3 wallets (Phantom and Solflare). It includes functionalities like image generation, image analysis, web reasoning, web search, chat completion, and real-time live voice AI interaction.',
+      tasks:
+        'Developed comprehensive AI functionalities, integrated Web3 wallet authentication, and ensured seamless real-time AI interactions for a cutting-edge user experience.',
+      url: 'https://fpcode-ai.vercel.app/',
+      img: '/fpcodeai.png', // Assuming you'll add an 'fpcodeai.png' image in your public folder
+      tags: ['React.js', 'Gemini API', 'Groq API', 'Web3.js', 'Solana'],
+    },
+    {
+      id: getId(),
+      name: 'AI Learn and Analyser Tele Bot',
+      description: 'A Telegram bot designed for learning and cryptocurrency analysis. It provides educational content, performs chart analysis, and generates swing and scalp trading signals. The bot can also be integrated into Telegram groups.',
+      tasks:
+        'Developed the core AI functionalities for learning, chart analysis, and signal generation, ensuring seamless integration with the Telegram API for group and individual interactions.',
+      url: 'https://web.telegram.org/k/#@study_crypto_assistant_bot',
+      img: '/telebot.png', 
+      tags: ['Python3', 'Telegram API', 'Groq API', 'Gemini API', 'AI'],
+    },
+    {
+      id: getId(),
+      name: 'Study Crypto Web with AI Chart Analyzer',
+      description: 'A company profile website for Study Crypto, featuring an integrated AI bot for learning and chart analysis. This platform provides educational resources and tools for cryptocurrency enthusiasts.',
+      tasks:
+        'Developed the front-end interface and integrated the AI bot for interactive learning and chart analysis, enhancing user engagement and educational value.',
+      url: 'https://studycrypto.vercel.app/',
+      img: '/scweb.png', // Assuming you'll add a 'scweb.png' image in your public folder
+      tags: ['React.js', 'Groq API', 'AI', 'Education', 'Cryptocurrency'],
+    },
     {
       id: getId(),
       name: 'Task Manager',
