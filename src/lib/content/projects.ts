@@ -10,7 +10,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://pokedex-on-sol.vercel.app/',
       repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
       img: '/pokedex.png',
-      year: 2024, // Assuming year
+      year: 2025, // Assuming year
       tags: ['React.js', 'Groq API', 'Pokemon API', 'Solana', 'Web3'],
     },
     {
@@ -19,7 +19,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://fpcode-ai.vercel.app/',
       repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
       img: '/fpcodeai.png',
-      year: 2024, // Assuming year
+      year: 2025, // Assuming year
       tags: ['React.js', 'Gemini API', 'Groq API', 'Web3.js', 'Solana'],
     },
     {
@@ -28,7 +28,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://studycrypto.vercel.app/',
       repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
       img: '/scweb.png',
-      year: 2024, // Assuming year
+      year: 2025, // Assuming year
       tags: ['React.js', 'Groq API', 'AI', 'Education', 'Cryptocurrency'],
     },
     {
@@ -37,7 +37,7 @@ export const projectsSection: ProjectsSectionType = {
       url: 'https://web.telegram.org/k/#@study_crypto_assistant_bot',
       repo: 'https://github.com/farrelputra16', // Assuming a repo link, please update if different
       img: '/telebot.png',
-      year: 2024, // Assuming year
+      year: 2025, // Assuming year
       tags: ['Python3', 'Telegram API', 'Groq API', 'Gemini API', 'AI'],
     },
     {
