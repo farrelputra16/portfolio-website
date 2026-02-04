@@ -11,6 +11,8 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Social from './Social';
 import SocialLinks from './Social/SocialLinks';
+import Stats from './Stats';
+import Testimonials from './Testimonials';
 
 export {
   About,
@@ -26,4 +28,6 @@ export {
   Skills,
   Social,
   SocialLinks,
+  Stats,
+  Testimonials,
 };

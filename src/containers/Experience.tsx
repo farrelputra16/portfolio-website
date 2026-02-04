@@ -1,5 +1,5 @@
 'use client';
-import { TabList } from '@/components';
+import ExperienceTimeline from '@/components/ExperienceTimeline';
 
 import { experienceSection } from '../lib/content/experience';
 import { getSectionAnimation } from '../styles/animations';
@@ -9,11 +9,13 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="max-w-3xl py-32 mx-auto"
+      className="py-32 mx-auto max-w-screen-xl px-6"
       {...getSectionAnimation}
     >
-      <h2 className="heading-secondary">{experienceSection.title}</h2>
-      <TabList experiences={experienceSection.experiences} />
+      <h2 className="heading-secondary text-center">
+        {experienceSection.title}
+      </h2>
+      <ExperienceTimeline experiences={experienceSection.experiences} />
     </motion.section>
   );
 };

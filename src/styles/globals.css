@@ -5,14 +5,6 @@
 @layer base {
   /* Color variables for future use */
   :root {
-    /* --color-bg: #fcfaf8; */
-    /* --color-accent: #14cf93; */
-    /* --color-accent: ##64ffda; */
-    /* --color-accent: #61dafb); */
-    /* --color-text: #383838; */
-    /* --color-dark-2: #282828; */
-    /* --color-dark-3: #a2a2a2; */
-
     /* Light Theme */
     --color-bg: theme(colors.slate.50);
     --color-bg-secondary: theme(colors.white);
@@ -52,7 +44,6 @@
 }
 
 /* TYPOGRAPHY */
-
 .heading-secondary,
 .h2 {
   @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
@@ -60,4 +51,45 @@
 .heading-tertiary,
 .h3 {
   @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
+}
+
+/* CUSTOM UTILITIES */
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(
+        to right,
+        var(--color-accent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, var(--color-accent) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 dark:from-slate-100 dark:via-slate-300 dark:to-slate-100 bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .animate-delay-1000 {
+    animation-delay: 1000ms;
+  }
 }

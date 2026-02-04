@@ -32,6 +32,21 @@ module.exports = {
       backgroundImage: {
         torch:
           'radial-gradient(525px at 50% 50%, var(--color-accent-torch), transparent 80%)',
+        'grid-pattern':
+          'linear-gradient(to right, var(--color-accent) 1px, transparent 1px), linear-gradient(to bottom, var(--color-accent) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        grid: '40px 40px',
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce 2s infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-1000px 0' },
+          '100%': { backgroundPosition: '1000px 0' },
+        },
       },
     },
   },
