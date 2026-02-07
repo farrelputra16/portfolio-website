@@ -20,6 +20,13 @@ import ShowLottie from './ui/ShowLottie';
 import Sidebar from './ui/Sidebar';
 import Wrapper from './ui/Wrapper';
 
+// 3D Components (dynamic import recommended)
+export { default as ParticleBackground } from './3d/ParticleBackground';
+export { default as SkillsSphere } from './3d/SkillsSphere';
+export { default as HolographicCard } from './3d/HologhraphicCard';
+export { default as Terminal3D } from './3d/Terminal3D';
+export { default as AnimatedLogo } from './3d/AnimatedLogo';
+
 export {
   AuthorImage,
   Button,
