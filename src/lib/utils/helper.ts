@@ -1,8 +1,9 @@
-import tailwindConfig from '../../../tailwind.config';
-import { BreakpointType, ProjectType } from '../types';
 import clsx, { ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import resolveConfig from 'tailwindcss/resolveConfig';
+
+import tailwindConfig from '../../../tailwind.config';
+import { BreakpointType, ProjectType } from '../types';
 
 const fullConfig = resolveConfig(tailwindConfig);
 

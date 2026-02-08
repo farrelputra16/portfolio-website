@@ -1,9 +1,9 @@
 'use client';
-import { ExperienceType } from '@/lib/types';
-import { getId } from '@/lib/utils/helper';
-
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
+
+import { ExperienceType } from '@/lib/types';
+import { getId } from '@/lib/utils/helper';
 
 type Props = {
   experiences: ExperienceType[];

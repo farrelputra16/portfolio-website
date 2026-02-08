@@ -1,10 +1,8 @@
 'use client';
 
-import featuredProjectsSection from '@/lib/content/featured-projects';
-
 import { Wrapper } from '@/components';
 import FeaturedProject from '@/components/ui/FeaturedProject';
-
+import featuredProjectsSection from '@/lib/content/featured-projects';
 import { getSectionAnimation } from '@/styles/animations';
 
 const FeaturedProjects = () => {

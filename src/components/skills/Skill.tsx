@@ -1,10 +1,9 @@
 'use client';
-import { SoftwareSkillType } from '@/lib/types';
-import { getId } from '@/lib/utils/helper';
+import { motion, MotionProps } from 'framer-motion';
 
 import { ListItem, ShowLottie, SkillIcon } from '@/components';
-
-import { motion, MotionProps } from 'framer-motion';
+import { SoftwareSkillType } from '@/lib/types';
+import { getId } from '@/lib/utils/helper';
 
 type Props = {
   lottie?: any;

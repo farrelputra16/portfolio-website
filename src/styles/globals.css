@@ -142,4 +142,66 @@
   .animate-delay-1000 {
     animation-delay: 1000ms;
   }
+  /* ===== UTILITIES ===== */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Glass morphism effects */
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  .glass-dark {
+    @apply backdrop-blur-md bg-black/10 border border-white/10;
+  }
+
+  /* Holographic gradient */
+  .holographic {
+    background: linear-gradient(
+      135deg,
+      rgba(96, 165, 250, 0.1) 0%,
+      rgba(168, 85, 247, 0.1) 50%,
+      rgba(236, 72, 153, 0.1) 100%
+    );
+  }
+
+  /* Grid pattern overlay */
+  .bg-grid-pattern {
+    background-image: linear-gradient(
+        rgba(96, 165, 250, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(96, 165, 250, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Animated gradient */
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Glow effects */
+  .glow {
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  }
 }

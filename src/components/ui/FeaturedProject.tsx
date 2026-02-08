@@ -1,11 +1,11 @@
-import { FeaturedProjectType } from '@/lib/types';
-import { blurImageURL } from '@/lib/utils/config';
-import { cn } from '@/lib/utils/helper';
-
 import { Icon } from '@iconify/react';
 import { motion, MotionProps } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { FeaturedProjectType } from '@/lib/types';
+import { blurImageURL } from '@/lib/utils/config';
+import { cn } from '@/lib/utils/helper';
 
 interface Props extends FeaturedProjectType, MotionProps {
   align?: 'left' | 'right';

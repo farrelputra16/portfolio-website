@@ -1,6 +1,5 @@
-import { author } from '@/lib/content/portfolio';
-
 import { Sidebar, SocialLink } from '@/components';
+import { author } from '@/lib/content/portfolio';
 
 const Email = () => {
   return (

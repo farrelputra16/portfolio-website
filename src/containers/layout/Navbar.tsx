@@ -1,16 +1,14 @@
 'use client';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
 import { navbarSection } from '@/lib/content/navbar';
 import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
-
-import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
-
 import { fadeIn, slideIn } from '@/styles/animations';
-
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 /**
  * Hides the navbar while scrolling down

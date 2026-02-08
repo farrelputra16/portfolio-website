@@ -1,11 +1,10 @@
 'use client';
+import { useState } from 'react';
+
+import { Link, ListItem } from '@/components';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { ExperienceType } from '@/lib/types';
 import { getBreakpointsWidth, getId } from '@/lib/utils/helper';
-
-import { Link, ListItem } from '@/components';
-
-import { useState } from 'react';
 
 type Props = {
   experiences: ExperienceType[];

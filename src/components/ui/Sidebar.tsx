@@ -1,8 +1,8 @@
 'use client';
-import { fadeIn } from '@/styles/animations';
-
 import { motion } from 'framer-motion';
 import React from 'react';
+
+import { fadeIn } from '@/styles/animations';
 
 type Props = {
   children?: React.ReactNode;

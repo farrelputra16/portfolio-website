@@ -1,21 +1,20 @@
 'use client';
+import dynamic from 'next/dynamic';
+
+import { Button, Wrapper } from '@/components';
 import { projectsSection } from '@/lib/content/projects';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
-
-import { Button, Wrapper } from '@/components';
-
-import dynamic from 'next/dynamic';
 
 const HolographicCard = dynamic(
   () => import('@/components/3d/HologhraphicCard'),
   { ssr: false }
 );
 
-import { getSectionAnimation } from '@/styles/animations';
-
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+
+import { getSectionAnimation } from '@/styles/animations';
 
 const Projects = () => {
   const { projects, title } = projectsSection;

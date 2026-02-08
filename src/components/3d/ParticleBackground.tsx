@@ -6,17 +6,22 @@ import * as THREE from 'three';
 function ParticleField() {
   const pointsRef = useRef<THREE.Points>(null);
 
-  const particlesPosition = useMemo(() => {
+  const [positions, colors] = useMemo(() => {
     const positions = new Float32Array(2000 * 3);
+    const colors = new Float32Array(2000 * 3);
     
     for (let i = 0; i < 2000; i++) {
       const i3 = i * 3;
       positions[i3] = (Math.random() - 0.5) * 10;
       positions[i3 + 1] = (Math.random() - 0.5) * 10;
       positions[i3 + 2] = (Math.random() - 0.5) * 10;
+      
+      colors[i3] = Math.random() * 0.5 + 0.5;
+      colors[i3 + 1] = Math.random() * 0.5 + 0.5;
+      colors[i3 + 2] = 1;
     }
     
-    return positions;
+    return [positions, colors];
   }, []);
 
   useFrame((state) => {
@@ -26,21 +31,29 @@ function ParticleField() {
     }
   });
 
-  const geometry = useMemo(() => {
-    const geo = new THREE.BufferGeometry();
-    geo.setAttribute('position', new THREE.BufferAttribute(particlesPosition, 3));
-    return geo;
-  }, [particlesPosition]);
-
   return (
-    <points ref={pointsRef} geometry={geometry}>
+    <points ref={pointsRef}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          count={positions.length / 3}
+          array={positions}
+          itemSize={3}
+        />
+        <bufferAttribute
+          attach="attributes-color"
+          count={colors.length / 3}
+          array={colors}
+          itemSize={3}
+        />
+      </bufferGeometry>
       <pointsMaterial
-        transparent
-        color="#60a5fa"
         size={0.02}
-        sizeAttenuation={true}
-        depthWrite={false}
+        vertexColors
+        transparent
         opacity={0.8}
+        sizeAttenuation
+        depthWrite={false}
       />
     </points>
   );
@@ -49,44 +62,48 @@ function ParticleField() {
 function ConnectionLines() {
   const linesRef = useRef<THREE.LineSegments>(null);
   
-  const lineGeometry = useMemo(() => {
+  const positions = useMemo(() => {
     const particleCount = 100;
-    const positions = new Float32Array(particleCount * 3);
+    const particlePositions = new Float32Array(particleCount * 3);
     
-    // Generate positions
     for (let i = 0; i < particleCount; i++) {
       const i3 = i * 3;
-      positions[i3] = (Math.random() - 0.5) * 8;
-      positions[i3 + 1] = (Math.random() - 0.5) * 8;
-      positions[i3 + 2] = (Math.random() - 0.5) * 8;
+      particlePositions[i3] = (Math.random() - 0.5) * 8;
+      particlePositions[i3 + 1] = (Math.random() - 0.5) * 8;
+      particlePositions[i3 + 2] = (Math.random() - 0.5) * 8;
     }
     
-    // Find connections
     const linePositions: number[] = [];
     for (let i = 0; i < particleCount; i++) {
       const i3 = i * 3;
-      const pos1 = new THREE.Vector3(positions[i3], positions[i3 + 1], positions[i3 + 2]);
+      const pos1 = new THREE.Vector3(
+        particlePositions[i3],
+        particlePositions[i3 + 1],
+        particlePositions[i3 + 2]
+      );
       
       for (let j = i + 1; j < particleCount; j++) {
         const j3 = j * 3;
-        const pos2 = new THREE.Vector3(positions[j3], positions[j3 + 1], positions[j3 + 2]);
+        const pos2 = new THREE.Vector3(
+          particlePositions[j3],
+          particlePositions[j3 + 1],
+          particlePositions[j3 + 2]
+        );
         
         if (pos1.distanceTo(pos2) < 2) {
           linePositions.push(
-            positions[i3], positions[i3 + 1], positions[i3 + 2],
-            positions[j3], positions[j3 + 1], positions[j3 + 2]
+            particlePositions[i3],
+            particlePositions[i3 + 1],
+            particlePositions[i3 + 2],
+            particlePositions[j3],
+            particlePositions[j3 + 1],
+            particlePositions[j3 + 2]
           );
         }
       }
     }
     
-    const geometry = new THREE.BufferGeometry();
-    geometry.setAttribute(
-      'position',
-      new THREE.Float32BufferAttribute(linePositions, 3)
-    );
-    
-    return geometry;
+    return new Float32Array(linePositions);
   }, []);
 
   useFrame((state) => {
@@ -97,7 +114,15 @@ function ConnectionLines() {
   });
 
   return (
-    <lineSegments ref={linesRef} geometry={lineGeometry}>
+    <lineSegments ref={linesRef}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          count={positions.length / 3}
+          array={positions}
+          itemSize={3}
+        />
+      </bufferGeometry>
       <lineBasicMaterial
         color="#3b82f6"
         transparent

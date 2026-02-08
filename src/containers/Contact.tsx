@@ -1,7 +1,5 @@
-import { contactSection } from '@/lib/content/contact';
-
 import { Button, Wrapper } from '@/components';
-
+import { contactSection } from '@/lib/content/contact';
 import { getSectionAnimation } from '@/styles/animations';
 
 const Contact = () => {

@@ -4,7 +4,6 @@ import DarkModeButton from './buttons/DarkModeButton';
 import Link from './buttons/Link';
 import NavButton from './buttons/NavButton';
 import ExperienceTimeline from './ExperienceTimeline';
-import FloatingActions from './FloatingActions';
 import ListItem from './lists/ListItem';
 import TabList from './lists/TabList';
 import InteractiveSkillIcon from './skills/InteractiveSkillIcon';
@@ -26,6 +25,8 @@ export { default as HolographicCard } from './3d/HologhraphicCard';
 export { default as ParticleBackground } from './3d/ParticleBackground';
 export { default as SkillsSphere } from './3d/SkillsSphere';
 export { default as Terminal3D } from './3d/Terminal3D';
+export { default as HolographicHero } from './effects/HolographicHero';
+export { default as FloatingActions } from './FloatingActions';
 
 export {
   AuthorImage,
@@ -34,7 +35,6 @@ export {
   DarkModeButton,
   EnhancedProjectCard,
   ExperienceTimeline,
-  FloatingActions,
   InteractiveSkillIcon,
   Link,
   ListItem,

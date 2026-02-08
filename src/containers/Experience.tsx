@@ -1,9 +1,10 @@
 'use client';
+import { motion } from 'framer-motion';
+
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 
 import { experienceSection } from '../lib/content/experience';
 import { getSectionAnimation } from '../styles/animations';
-import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (

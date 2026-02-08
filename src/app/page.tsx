@@ -1,5 +1,8 @@
 'use client';
-import { FloatingActions } from '@/components';
+import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+
+import { FloatingActions, HolographicHero } from '@/components';
 import {
   About,
   Contact,
@@ -13,9 +16,6 @@ import {
   Testimonials,
 } from '@/containers';
 
-import dynamic from 'next/dynamic';
-
-// Dynamic import 3D components (client-side only)
 const ParticleBackground = dynamic(
   () => import('@/components/3d/ParticleBackground'),
   { ssr: false }
@@ -31,35 +31,29 @@ const Terminal3D = dynamic(
   { ssr: false }
 );
 
-const AnimatedLogo = dynamic(
-  () => import('@/components/3d/AnimatedLogo'),
-  { ssr: false }
-);
-
-import type { NextPage } from 'next';
-
 const Home: NextPage = () => {
   return (
     <>
-      {/* Particle Background */}
       <ParticleBackground />
       
       <Layout>
-        {/* Animated Logo Section */}
-        <section className="min-h-[40vh] flex items-center justify-center">
-          <AnimatedLogo text="FARREL" />
+        {/* Holographic Hero Section */}
+        <section className="min-h-[70vh] flex items-center justify-center py-20">
+          <HolographicHero 
+            name="FARREL" 
+            title="PUTRA"
+            subtitle="AI ENGINEER • WEB3 DEV"
+          />
         </section>
 
         <Hero />
         
-        {/* Terminal Section */}
         <section className="py-24">
           <Terminal3D className="max-w-4xl mx-auto" />
         </section>
         
         <About />
         
-        {/* 3D Skills Sphere */}
         <section className="py-24">
           <h2 className="heading-secondary text-center mb-12">
             Interactive Skills
@@ -75,6 +69,7 @@ const Home: NextPage = () => {
         <Testimonials />
         <Contact />
       </Layout>
+      
       <FloatingActions />
     </>
   );

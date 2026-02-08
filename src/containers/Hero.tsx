@@ -1,13 +1,11 @@
 'use client';
+import { motion } from 'framer-motion';
+
+import { Button, Wrapper } from '@/components';
 import { heroSection } from '@/lib/content/hero';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
-
-import { Button, Wrapper } from '@/components';
-
 import { slideUp } from '@/styles/animations';
-
-import { motion } from 'framer-motion';
 
 const Hero = () => {
   const { cta, subtitle, title, tagline, description, specialText } =

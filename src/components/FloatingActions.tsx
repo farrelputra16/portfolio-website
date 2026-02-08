@@ -1,10 +1,10 @@
 'use client';
-import { author } from '@/lib/content/portfolio';
-import { socialLinks } from '@/lib/content/portfolio';
-
 import { Icon } from '@iconify/react';
 import { AnimatePresence,motion } from 'framer-motion';
 import { useEffect,useState } from 'react';
+
+import { author } from '@/lib/content/portfolio';
+import { socialLinks } from '@/lib/content/portfolio';
 
 const FloatingActions = () => {
   const [showScroll, setShowScroll] = useState(false);

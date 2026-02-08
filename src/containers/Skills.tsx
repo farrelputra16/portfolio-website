@@ -1,14 +1,12 @@
 'use client';
-import { skillsSection } from '@/lib/content/skills';
-import { useTheme } from '@/lib/hooks/use-theme';
-import { getId } from '@/lib/utils/helper';
+import { motion } from 'framer-motion';
 
 import { ListItem, ShowLottie, Wrapper } from '@/components';
 import InteractiveSkillIcon from '@/components/skills/InteractiveSkillIcon';
-
+import { skillsSection } from '@/lib/content/skills';
+import { useTheme } from '@/lib/hooks/use-theme';
+import { getId } from '@/lib/utils/helper';
 import { getSectionAnimation } from '@/styles/animations';
-
-import { motion } from 'framer-motion';
 
 const Skills = () => {
   const { title, skills } = skillsSection;
