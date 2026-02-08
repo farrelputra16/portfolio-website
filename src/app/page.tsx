@@ -1,5 +1,5 @@
 'use client';
-import dynamic from 'next/dynamic';
+import { FloatingActions } from '@/components';
 import {
   About,
   Contact,
@@ -12,7 +12,8 @@ import {
   Stats,
   Testimonials,
 } from '@/containers';
-import { FloatingActions } from '@/components';
+
+import dynamic from 'next/dynamic';
 
 // Dynamic import 3D components (client-side only)
 const ParticleBackground = dynamic(

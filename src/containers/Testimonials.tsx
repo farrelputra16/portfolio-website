@@ -1,8 +1,9 @@
 'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Icon } from '@iconify/react';
 import { testimonialsSection } from '@/lib/content/testimonials';
+
+import { Icon } from '@iconify/react';
+import { AnimatePresence,motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Testimonials = () => {
   const { title, testimonials } = testimonialsSection;

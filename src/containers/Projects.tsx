@@ -1,10 +1,11 @@
 'use client';
-import dynamic from 'next/dynamic';
 import { projectsSection } from '@/lib/content/projects';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
 import { sortByYear } from '@/lib/utils/helper';
 
 import { Button, Wrapper } from '@/components';
+
+import dynamic from 'next/dynamic';
 
 const HolographicCard = dynamic(
   () => import('@/components/3d/HologhraphicCard'),

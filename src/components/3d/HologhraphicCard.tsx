@@ -1,7 +1,7 @@
 'use client';
-import { useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import { useRef, useState } from 'react';
 
 interface HolographicCardProps {
   title: string;
